@@ -114,12 +114,32 @@ What will be recommended: **movie** <br/>
 What will be recommended: **HybridRoundRobinWeightedSum** <br/>
 Item Context: **none** <br/>
 
+To create a weighted hybrid approach, we need to define which pre-created recommendation
+scenarios we want to combine and how much weight we want to assign to each one.
+For this demonstration, let's use the following configuration:
+* **Popular Horror Movies** with a weight of 
+* **Similar Movies** with a weight of 
+* **Movies based on my ratings** with a weight of 
+
+
 <p align="center">
 <img src="/images/hybrid_movies.png" alt="Hybrid" height="350">
 </p>
 
 
 #### User recommendation
+
+Often, we may want to reverse the matching direction and 
+recommend relevant users for a given item. For this cases,
+the Uptrendz platform offers a user recommender, that:
+* Uses a pre-configured scenario with a content-based recommender to find similar items
+* Extracts the users which have interacted the most with the found items
+* Favors more recent interactions
+* Can be restricted to only interactions that happend in the last N days
+
+With respect to the movie domain and the MovieLens-100k dataset, such an approach
+could, for example, be well suited to recommend users 
+for a completely new movie (i.e., to tackle the cold-start item problem).
 
 <p align="center">
 <img src="/images/users_for_movies.png" alt="User" height="350">

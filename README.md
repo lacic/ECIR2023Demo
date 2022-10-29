@@ -4,7 +4,7 @@ This repository accompanies the paper
 "**A Multi-Domain System for Real-time Recommendations**" 
 submitted to ECIR'23 Demonstration Paper Track.
 
-**Demonstration goal:** Setup an online movie recommender
+**DEMONSTRATION GOAL:** Setup an online movie recommender
 
 
 The purpose of the following content is to show how a real-time movie recommender could be setup up and used in an online setting. 
