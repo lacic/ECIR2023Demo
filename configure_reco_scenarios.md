@@ -91,7 +91,7 @@ Consideration Of Consumed Items: **none**
 
 
 <p align="center">
-<img src="/images/similar_movies.png" alt="Similar" height="350">
+<img src="/images/similar_movies.png" alt="Similar" height="300">
 </p>
 
 
